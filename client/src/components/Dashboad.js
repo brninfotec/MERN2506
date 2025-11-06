@@ -13,7 +13,7 @@ function Dashboad() {
 
     dataToSend.append("email",userDetails.email);
 
-    let url = `http://localhost:2222/deleteProfile?email=${userDetails.email}`
+    let url = `/deleteProfile?email=${userDetails.email}`
 
     let JSONData = await fetch(url,{method:"DELETE"});
     let JSOData = await JSONData.json();
@@ -28,7 +28,7 @@ function Dashboad() {
       }}>Delete Account</button>
       <h1>Dashboard</h1>
       <h2>{userDetails.firstName} {userDetails.lastName}</h2>
-      <img src={`http://localhost:2222/${userDetails.profilePic}`} alt=''></img>
+      <img src={`/${userDetails.profilePic}`} alt=''></img>
     </div>
   )
 }

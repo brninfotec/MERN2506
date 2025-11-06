@@ -49,7 +49,7 @@ function EditProfile() {
      
      }
      
-     let JSONData = await fetch("http://localhost:2222/updateProfile",reqOptions);
+     let JSONData = await fetch("/updateProfile",reqOptions);
      let JSOData = await JSONData.json();
      alert(JSOData.msg)
      console.log(JSOData)

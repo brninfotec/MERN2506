@@ -32,7 +32,7 @@ function Signup() {
      
      }
      
-     let JSONData = await fetch("http://localhost:2222/signup",reqOptions);
+     let JSONData = await fetch("/signup",reqOptions);
      let JSOData = await JSONData.json();
      alert(JSOData.msg)
      console.log(JSOData)

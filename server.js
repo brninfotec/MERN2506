@@ -4,17 +4,18 @@ const cors = require("cors");
 const multer = require("multer");
 const jwt = require("jsonwebtoken");
 const bcrypt = require("bcrypt");
-require("dotenv").config();
+dotenv.config();
 let path = require("path");
 
 let app = express();
 app.use(cors());
 app.use('/uploads', express.static('uploads'));
-// app.use(express.static(path.join(__dirname, "./client/build")));
+app.use(express.static(path.join(__dirname, "./client/build")));
 
-// app.get("*", (req, res) => {
-//   res.sendFile(path.join(__dirname, "./client/build/index.html"));
-// });
+app.get("*", (req, res) => {
+  res.sendFile("./client/build/index.html");
+});
+
 
 const storage = multer.diskStorage({
   destination:  (req, file, cb) => {
