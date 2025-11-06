@@ -1,0 +1,27 @@
+.App {
+  text-align: center;
+}
+
+form{
+  display: inline-block;
+  background-color: aquamarine;
+}
+form label{
+  display: inline-block;
+  width: 150px;
+
+}
+form div{
+  margin: 10px;
+}
+
+img{
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+nav{
+  display: flex;
+  justify-content: space-evenly;
+}
