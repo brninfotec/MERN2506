@@ -24,6 +24,7 @@ function Login() {
       method:"POST",
       body:dataToSend,
      
+     
      }
      
      let JSONData = await fetch("http://localhost:2222/validateToken",reqOptions);
