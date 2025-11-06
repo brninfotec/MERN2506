@@ -4,6 +4,7 @@ const cors = require("cors");
 const multer = require("multer");
 const jwt = require("jsonwebtoken");
 const bcrypt = require("bcrypt");
+let dotenv = require("dotenv");
 dotenv.config();
 let path = require("path");
 
