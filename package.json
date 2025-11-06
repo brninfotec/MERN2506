@@ -4,7 +4,7 @@
   "main": "server.js",
  "scripts": {
   "start": "node server.js",
-  "build": "cd client && yarn install && yarn build"
+  "build":"cd client && yarn install --frozen-lockfile && yarn build"
 },
   "dependencies": {
     "bcrypt": "^6.0.0",
